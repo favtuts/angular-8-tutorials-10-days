@@ -26,3 +26,12 @@ cd hello-world
 ng serve
 ng serve --host 0.0.0.0 --port 8080
 ```
+
+Fixing for live load not working:
+
+```
+ng serve --live-reload -o
+
+# On Linux OS run your app with administrative controls using sudo
+sudo ng serve
+```

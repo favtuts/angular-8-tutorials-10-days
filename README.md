@@ -35,3 +35,16 @@ ng serve --live-reload -o
 # On Linux OS run your app with administrative controls using sudo
 sudo ng serve
 ```
+
+
+# install Nodejs Module
+
+First Clean the cache
+```
+npm cache clean --force
+```
+
+Then Install It
+```
+npm install
+```

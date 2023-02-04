@@ -1,3 +1,7 @@
 <div>  
   <message-input [message]="'Demostration of Input Property of a Component'" [alert-pop]="val"></message-input>  
 </div>
+
+<div>  
+  <message-output [message]="'Demostration of Out Property of a Component'" [alert-pop]="val" (onSignup)="onSignup($event)"></message-output>      
+</div>

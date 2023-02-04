@@ -1,6 +1,10 @@
 <div>  
-  <h2>Demo of Event Binding in Angular 8</h2>  
-  <input type="button" value="Click" class="btn-block" (click)="showAlert()" />  
-  <br /><br />  
-  <input type="button" value="Mouse Enter" class="btn-block" (mouseenter)="showAlert()" />  
-</div> 
+  <div>  
+      <span>Enter Your Name </span>  
+      <input [(ngModel)]="val" type="text"/>  
+  </div>  
+  <div>  
+      <span>Your Name :- </span>  
+      <span>{{val}}</span>  
+  </div>  
+</div>

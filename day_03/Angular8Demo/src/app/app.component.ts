@@ -7,8 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  public showAlert() : void {
-    console.log('You clicked on the button...');
-    alert("Click Event Fired...");
-  }
+  public val: string = "";
 }

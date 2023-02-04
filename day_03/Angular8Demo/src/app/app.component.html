@@ -1,17 +1,6 @@
 <div>  
-  <span>Current Number is {{value1}}</span>      
-  <br /><br />    
-  Display Value in Input Controls: <input [value]="value1"/>
+  <h2>Demo of Event Binding in Angular 8</h2>  
+  <input type="button" value="Click" class="btn-block" (click)="showAlert()" />  
   <br /><br />  
-  <span>Current Number is {{value1 | currency}}</span>  
-  <br /><br />  
-  <span>Current Number is {{dt1}}</span>  
-  <br /><br />  
-  <span>Current Number is {{dt1 | date}}</span>  
-  <br /><br />  
-  <span>Status is {{status}}</span>  
-  <br /><br />  
-  <span>{{status ? "This is correct status" :"This is false status"}}</span>  
-  <br /><br />  
-  <span>{{returnString()}}</span>  
-</div>  
+  <input type="button" value="Mouse Enter" class="btn-block" (mouseenter)="showAlert()" />  
+</div> 

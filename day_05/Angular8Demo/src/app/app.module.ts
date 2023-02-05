@@ -4,11 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProperCasePipe } from './propercase.pipe';
+import { ChildComponent } from './child.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent, ProperCasePipe
+    AppComponent, ProperCasePipe, ChildComponent
   ],
   imports: [
     BrowserModule, FormsModule

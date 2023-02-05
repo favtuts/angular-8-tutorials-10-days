@@ -1,21 +1,10 @@
+<h2>Demo of Viewchild</h2>  
 <div>  
-  <div class="form-horizontal">  
-      <h2 class="aligncenter">Custom Pipes - Proper Case</h2><br />  
-      <div class="row">  
-          <div class="col-xs-12 col-sm-2 col-md-2">  
-              <span>Enter Text</span>  
-          </div>  
-          <div class="col-xs-12 col-sm-4 col-md-4">  
-              <input type="text" id="txtFName" placeholder="Enter Text" [(ngModel)]="message" />  
-          </div>  
-      </div>  
-      <div class="row">  
-          <div class="col-xs-12 col-sm-2 col-md-2">  
-              <span>Result in Proper Case</span>  
-          </div>  
-          <div class="col-xs-12 col-sm-4 col-md-4">  
-              <span>{{message | propercase}}</span>  
-          </div>  
-      </div>  
-  </div>  
-</div> 
+    <child (addNumber)="add($event)" (subtractNumber)="subtract($event)" (multiplyNumber)="multiply($event)"  
+            (divideNumber)="divide($event)" #calculator></child>  
+</div>  
+<h3>Result</h3>  
+<span>{{result}}</span>  
+<br />  
+<br />  
+<input type="button" value="Reset" (click)="reset()" />  

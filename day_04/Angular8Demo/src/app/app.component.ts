@@ -7,11 +7,18 @@ import { Component } from '@angular/core';
 })  
 export class AppComponent {
   
-  showColor: boolean = false;
+  showInfo: boolean = false;
+  caption: string = 'Show Text';
 
   constructor() {}
 
-  public changeColor(): void {
-    this.showColor = !this.showColor;
+  public changeData(): void {
+    this.showInfo = !this.showInfo;
+    if (this.showInfo) {
+      this.caption = 'Hide Text';
+    }
+    else {
+      this.caption = 'Show Text';
+    }
   }
 }

@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls : ['./custom.css']  
 })  
 export class AppComponent {
-  title = 'Welcome to Angular 8 Learning Series...';
+  
+  showColor: boolean = false;
+
+  constructor() {}
+
+  public changeColor(): void {
+    this.showColor = !this.showColor;
+  }
 }
